@@ -1,0 +1,57 @@
+sql queries::
+
+create table vehicle_type(
+type_id int,
+name varchar(10),
+cost int,primary key(type_id));
+
+create table vehicle(
+vehicle_id varchar(10),
+type_id int,
+in_time timestamp,
+out_time timestamp,
+price int,
+primary key(vehicle_id));
+
+create table parking_space(
+space_id int,
+type_id int,
+vehicle_id varchar(10),
+primary key(space_id),
+foreign key(type_id) references vehicle_type(type_id),
+foreign key(vehicle_id) references vehicle(vehicle_id));
+
+INSERT INTO vehicle_type (type_id, name, cost) VALUES (1, 'Car', 50);
+INSERT INTO vehicle_type (type_id, name, cost) VALUES (2, 'Bike', 30);
+INSERT INTO vehicle_type (type_id, name, cost) VALUES (3, 'Truck', 80);
+INSERT INTO vehicle_type (type_id, name, cost) VALUES (4, 'Handicap', 40);
+
+
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (1, 1, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (2, 1, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (3, 1, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (4, 1, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (5, 1, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (6, 1, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (7, 1, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (8, 1, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (9, 1, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (10, 1, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (11, 1, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (12, 1, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (13, 1, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (14, 1, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (15, 1, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (16, 2, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (17, 2, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (18, 2, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (19, 2, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (20, 2, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (21, 3, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (22, 3, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (23, 3, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (24, 4, NULL);
+INSERT INTO parking_space (space_id, type_id, vehicle_id) VALUES (25, 4, NULL);
+
+
+

@@ -57,19 +57,3 @@ For the Streamlit interface:
 ```sh
 streamlit run main.py
 ```
-
-
-## Future Enhancements
-
-Looking ahead, the system could be improved with features like:
-
-- **Online Reservations**: Allowing users to reserve parking spaces in advance through the app.
-  
-- **Payment Integration**: Adding support for payment gateway integration to facilitate online payments.
-
-- **License Plate Recognition**: Implementing license plate recognition can automate vehicle identification and further streamline the parking process.
-
-- **Analytics Dashboard**: Providing administrators with insights into parking lot utilization rates, peak hours, and financial reports.
-  
-- **User Account Management**: Implementing account management for regular customers to store vehicle information and offer targeted discounts or services.
-

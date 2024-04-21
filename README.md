@@ -44,6 +44,10 @@ The Parking Management System is an advanced, interactive web application design
 
 Before you can run the application, ensure you have Python installed on your system, along with the necessary libraries: Flask, Streamlit, psycopg2, pandas, and SQLAlchemy. You will also need to set up a PostgreSQL database, ensuring it is accessible to the application.
 
+```sh
+pip install -r requirements.txt
+```
+
 To run the application, navigate to the project directory and execute:
 
 For the Flask server:

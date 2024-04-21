@@ -1,8 +1,8 @@
-# Smart Parking Management System
+# Parking Management System
 
 ## Overview
 
-The Smart Parking Management System is an advanced, interactive web application designed to simplify the management of vehicle parking spaces in lots or garages. It employs two key Python frameworks: Streamlit for the frontend user interface and Flask for the backend server operations. The application is connected to a PostgreSQL database, ensuring robust data handling and persistence.
+The Parking Management System is an advanced, interactive web application designed to simplify the management of vehicle parking spaces in lots or garages. It employs two key Python frameworks: Streamlit for the frontend user interface and Flask for the backend server operations. The application is connected to a PostgreSQL database, ensuring robust data handling and persistence.
 
 ## Features
 

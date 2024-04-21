@@ -4,10 +4,11 @@ import pandas as pd
 import math
 
 host = 'localhost'
-dbname = 'parkingdb'
-user = 'postgres'
-password = 'password'
-port = '5432'
+#enter your details
+dbname = ' '
+user = ' '
+password = ' '
+port = ' '
 
 conn_string = f"host={host} user={user} dbname={dbname} password={password} port={port}"
 conn = psycopg2.connect(conn_string)

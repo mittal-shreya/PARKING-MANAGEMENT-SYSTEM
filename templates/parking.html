@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Lot</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            background-color: #8d36d8;
+            color: white;
+        }
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: white;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            height: 50px;
+            text-align: center;
+            font-size: 18px;
+        }
+        tr:nth-child(even){background-color: #f2f2f2;}
+        tr:hover {background-color: #ddd;}
+        td.available {
+            background-color: #90ee90; 
+        }
+        td.occupied {
+            background-color: #ffcccb; 
+        }
+    </style>
+</head>
+<body>
+
+<h1>Parking Lot</h1>
+
+<div class="main-content">
+    <table>
+        {% for row in grid %}
+        <tr>
+            {% for cell in row %}
+                <td class="{{ 'occupied' if cell else 'available' }}">
+                    {% if cell %} Occupied {% else %} Available {% endif %}
+                </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+</body>
+</html>
